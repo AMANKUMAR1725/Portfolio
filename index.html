@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Aman Kumar</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/4ff3b42c48.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <h2 class="logo">Aman.</h2>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>  
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm <span>Aman</span> <br> from Jamshedpur</h1>
+        </div>
+    </div>
+   </div>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores molestiae, saepe iste incidunt sit est delectus! Facere adipisci voluptatibus blanditiis, facilis molestiae, repellendus, porro fugiat autem iure earum eum.</p>
+                   <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                      <p class="tab-links" onclick="opentab('education')" >Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web  app Development</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020</span><br>CEAT Tyre Ltd.</li>
+                        
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education" >
+                    <ul>
+                        <li><span>2023</span><br>BE from RKDF University, Bhopal</li>
+                        <li><span>2019</span><br>Diploma from XIPT, Ranchi</li>
+                        <li><span>2014</span><br>Matriculation from St. Marry's High school</li>
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services -->
+<div id="services">
+   <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designing</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nemo labore recusandae rem, odit illum eos minus alias harum inventore quae quaerat sed voluptate non ab voluptates aspernatur consectetur debitis.</p>
+            <a href="#">Learn more</a>
+        </div>
+
+        <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nemo labore recusandae rem, odit illum eos minus alias harum inventore quae quaerat sed voluptate non ab voluptates aspernatur consectetur debitis.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nemo labore recusandae rem, odit illum eos minus alias harum inventore quae quaerat sed voluptate non ab voluptates aspernatur consectetur debitis.</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+   </div>
+
+</div>
+
+<!-- portfolio -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>The game is played on grid that's 3 squares by 3 spuares . You are X and your freind is O. Players take turns putting their marks in empty spuares. The first player to get 3 of her marks in a row (up, down, across, or diagonally ) is the winner.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>A simple Calculator that consist of a number pad with digits from 0 to 9 , basic mathematical operation such as addition ,subtraction , multiplication and division and an equal sign to get the result of the calculation.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Simon Says Game</h3>
+                    <p>The game has four colored buttons . A round in the game consist of the device lighting up one or more buttons in a random order, after which the player must reproduce that order by pressing the buttons.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> amanjais51018@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 7070449492</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>  
+                </div>
+                <a href="My-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+     <div class="copyright">
+        <p>copyright @ Aman. Made with <i class="fa-solid fa-heart"></i> by Aman kumar</p>
+     </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
+
+    
